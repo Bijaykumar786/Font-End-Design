@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+
+    }
+    header{
+        background: url("./image/image1.jpeg");
+        background-repeat: no-repeat  ;
+        background-position: center;
+        background-size: 100% 100%, cover;
+        
+    }
+    header h2{
+        text-align: center;
+        padding: 100px;
+        color: rgb(238, 23, 23);
+        font-size: 50px;
+             }
+    
+        nav {
+        padding: 0;
+        border: 0;
+        position: sticky;
+        top: 0;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        gap: 15px;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgb(0, 0, 0.1);
+        shape-margin: round;
+                     }
+
+                     nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px 10px;
+                
+      }
+
+      nav a:hover {
+        background: #575757;
+        border-radius: 5px;
+      }
+    
+
+</style>
+<body>
+    <!-- header start -->
+    <header>
+        <h2>WeL-Come to Our Page</h2>
+    </header>
+    <!-- header end -->
+     <!-- Navbar start -->
+    <nav>
+        
+            <a href="#Home">Home</a>
+            <a href="#Menu">Menu</a>
+            <a href="#About us">About Us</a>
+            <a href="#Contact">Contact</a>
+          
+    </nav>
+    <!-- Navbar end -->
+
+    <section id="menu" class="menu-section"></section>
+
+    <section id="specials" class="menu-section"></section>
+
+    <section id="about" class="specials-seciton"></section>
+
+    <section id="contact" class="contact-section"></section>
+    
+
+    
+</body>
+</html>

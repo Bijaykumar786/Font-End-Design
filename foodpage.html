@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Bites</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+      }
+      header {
+        background: url("image/hero.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+      }
+      header p {
+        font-size: 1.5rem;
+      }
+      nav {
+        background: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        position: sticky;
+        top: 0;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .menu-section,
+      .about-section,
+      .contact-section {
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .menu-section {
+        background: #f8f8f8;
+      }
+      .menu-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu-item img {
+        width: 100%;
+        width: 280px;
+        height: 280px;
+        border-radius: 10px;
+      }
+      .menu-item h3 {
+        margin: 15px 0 10px;
+      }
+      .special-section {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.6) 100%
+          ),
+          url(image/banner.jpg) lightgray 50% / cover no-repeat;
+        background-repeat: no-repeat;
+        background-position: center center;
+        overlay: rgba(0, 0, 0, 0.9);
+        background-size: cover;
+        color: white;
+        padding: 60px 20px;
+      }
+      .special-section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .special-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .special-item {
+        background: white;
+        color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        text-align: center;
+      }
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+      }
+      footer p {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Indulge in the flavors of perfection with our iconic dishes!</p>
+      </div>
+    </header>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#specials">Specials</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="menu" class="menu-section">
+      <h2>Our Menu</h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="image/pizza.jpg" alt="Pizza" />
+          <h3>Margherita Pizza</h3>
+          <p>
+            Classic pizza topped with fresh tomato sauce, mozzarella, and basil.
+          </p>
+        </div>
+        <div class="menu-item">
+          <img src="image/burger.jpg" alt="Burger" />
+          <h3>Cheeseburger</h3>
+          <p>Juicy beef patty with melted cheese, fresh lettuce, and tomato.</p>
+        </div>
+        <div class="menu-item">
+          <img src="image/pasta.jpg" alt="Pasta" />
+          <h3>Alfredo Pasta</h3>
+          <p>Creamy Alfredo sauce over perfectly cooked fettuccine pasta.</p>
+        </div>
+        <div class="menu-item">
+          <img src="image/fried-chicken.jpg" alt="Salad" />
+          <h3>Korean Fried Chicken</h3>
+          <p>Crispy Fried chicken with hot bb and garlic sauce.</p>
+        </div>
+      </div>
+    </section>
+    <section id="specials" class="special-section">
+      <h2>Chef's Specials</h2>
+      <div class="special-container">
+        <div class="special-item">
+          <h3>Truffle Burger</h3>
+          <p>
+            Rich and savory burger infused with truffle oil and topped with
+            gourmet cheese.
+          </p>
+        </div>
+        <div class="special-item">
+          <h3>Lobster Bisque</h3>
+          <p>A creamy and flavorful soup made with fresh lobster and herbs.</p>
+        </div>
+        <div class="special-item">
+          <h3>Chocolate Lava Cake</h3>
+          <p>
+            Decadent chocolate cake with a gooey molten center, served with
+            vanilla ice cream.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        At Delicious Bites, we are passionate about serving the freshest and
+        most delicious meals. Our chefs use only the best ingredients to create
+        dishes that will tantalize your taste buds.
+      </p>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Email: info@deliciousbites.com</p>
+      <p>Phone: +1 (234) 567-890</p>
+      <p>Location: 123 Foodie Lane, Flavor Town</p>
+    </section>
+    <footer>
+      <p>&copy; 2024 Delicious Bites. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

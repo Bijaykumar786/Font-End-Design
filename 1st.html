@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lern Basic Html, Css</title>
+    <!-- start css -->
+    <style>
+      body {
+        font-family: sans-serif, Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        font-size: 12px;
+      }
+
+
+
+      header {
+        background-color: #09b120;
+        color: white;
+        padding: 0;
+       border: 1px solid #09b120;
+        text-align: center;
+        
+      }
+
+      nav {
+        padding: 0;
+        border: 0;
+        position: sticky;
+        top: 0;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        gap: 15px;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgb(0, 0, 0.1);
+        shape-margin: round;
+       
+        
+      }
+      nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px 10px;
+                
+      }
+
+      nav a:hover {
+        background: #575757;
+        border-radius: 5px;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      section h2 {
+        border-bottom: 2px solid #9d1818; /*line of heading*/
+        padding-bottom: 5px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        
+      }
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #4caf50;
+        color: white;
+        position: sticky;
+        bottom: 0;
+        box-shadow: 5px solid red;
+        
+      }
+
+    </style>
+  
+    <!-- end css -->
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <h1>Learn Web Development</h1>
+      <p>Your Journey to become a developer start here!</p>
+    </header>
+    <!-- Header end -->
+    <!-- navbar start -->
+    <nav>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#javascript">JavaScript</a>
+      <a href="#advanceTopic">Advance Topics</a>
+    </nav>
+    <!-- navbar end -->
+    <div class="container">
+      <section id="html">
+        <h2>Basci Html</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>What is Html</h3>
+            <!-- <p>
+              Html is the structure of a web page. Learn about tags, elements,
+              and attributes
+            </p> -->
+            <pre><code>
+              <a href="#html">HTML</a>
+              <a href="#css">CSS</a>
+              <a href="#javascript">JavaScript</a>
+              <a href="#advanceTopic">Advance Topics</a>
+            </pre></code>
+          </div>
+          <div class="card">
+            <h3>Essentaial Tags</h3>
+            <p>Master tagslike "div, "h1", "p"</p>
+          </div>
+        </div>
+      </section>
+      <section id="CSS">
+        <h2>Basic of CSS</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>What is CSS</h3>
+            <p>Css is the cascadding style sheet, it used for design</p>
+          </div>
+          <div class="card">
+            <h3>Responsive design</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+              minima optio, ducimus voluptatem reprehenderit aliquam
+              voluptatibus quos modi dolorem expedita est, nisi veritatis
+              repellendus earum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="JavaScript">
+        <h2>Basic of JavaScript</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>What is JavaScript</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              delectus ex cupiditate nesciunt culpa natus.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Important of JavaScript</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+              dolore commodi adipisci minus dolor optio.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="advance JavaScript">
+        <h2>Advnace of JavaScript</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Waht is JavaScript</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              quos, unde culpa sequi ducimus nisi?
+            </p>
+          </div>
+          <div class="card">
+            <h3>DOM Manipulation</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, est
+              quidem porro corporis dolores voluptate?
+            </p>
+          </div>
+          <div class="card">
+            <h3>APIs</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto, recusandae. Fugit velit tempora provident ex!
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+      <!-- Menu start -->
+    
+    <!-- footer start -->
+    <footer>
+      <h3>This is a Footer @2024 Copyright</h3>
+    </footer>
+
+
+    <!-- footer end -->
+  </body>
+</html>
