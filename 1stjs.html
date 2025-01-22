@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inline javascript -->
+     <button onclick="alert('Hello, world')">ALERT</button> 
+     <button onclick="prompt('Hello, world')">prompt</button>
+     <button onclick="confirm('Hello, world')">CONFORM</button>
+     <button id="myBtn">Click Here</button>
+     <button id="thisButton"> click this </button>
+
+
+
+     <script>
+        document.getElementById("myBtn").onclick = function() {
+         let username = prompt("What is your name?" ) ;
+            console.log(username);
+        };
+        
+        let name = "bijay" ;
+        console.log(" My Name is: ", name); 
+        
+        let age = 20 ;
+        console.log("Age is: ", age);
+      
+
+     </script>
+
+
+     <script>
+         let isstudent = confirm ("Are you a student?");
+        if (isstudent) {
+            console.log("Welcome, student!");
+            } 
+            else {
+            console.log("Welcome, visitor!");
+        }
+     </script>
+
+     <script src="1stjs.js"></script>
+</body>
+</html>
