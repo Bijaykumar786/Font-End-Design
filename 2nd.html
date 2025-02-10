@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>interactive Webpage</h1>
+    <button id="greetBtn">Greet Me</button>
+    <button id="infoBtn">Ask Info</button>
+    <script>
+      // alert example
+      document.getElementById("greetBtn").onclick = function () {
+        alert("Hello ! Welcome to interactive webpage.");
+      };
+
+      // prompt and conform example
+
+      document.getElementById("infoBtn").onclick = function () {
+        let name = prompt("What is your Name?");
+        let isReady = confirm(
+          "Hi " + name + ", are you ready to learn Javascript"
+        );
+
+        if (isReady) {
+          console.log(name + "is ready to learn Javascript !");
+        } else {
+          console.log(name + " is ready to learn Javascri ");
+        }
+      };
+    </script>
+  </body>
+</html>
